@@ -1,4 +1,4 @@
-# Journal de bord - INF1410
+# Journal de bord
 
 Bienvenue sur le journal de bord technique du projet. Retrouvez ci-dessous l'historique des notes et des décisions d'architecture.
 
