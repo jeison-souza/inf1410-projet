@@ -1,4 +1,4 @@
-#baseURL: "http://localhost:1313/"
+baseURL: "https://jeison-souza.github.io/inf1410-projet/"
 locale: fr-ca
 defaultContentLanguage: "fr"
 title: Projet INF-1410 - Jeison Souza
