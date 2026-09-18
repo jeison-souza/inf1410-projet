@@ -1,0 +1,72 @@
+#baseURL: "http://localhost:1313/"
+locale: fr-ca
+defaultContentLanguage: "fr"
+title: Projet INF-1410 - Jeison Souza
+theme: papermod
+enableRobotsTXT: true
+
+params:
+  description: Documentation des études et du développement du projet pour le cours INF-1410.
+  author: Jeison Souza
+  disableSpecial1stPost: false
+  keywords: ["Blog", "Développement", "INF-1410", "Projet", "Jeison Souza"]
+  
+  # Aparência e Comportamento
+  defaultTheme: dark
+
+  # Recursos de Leitura e Navegação
+  showReadingTime: true
+  ShowShareButtons: false
+  showPostNavLinks: true
+  showBreadcrumbs: true
+  showCodeCopyButton: true
+
+  # Ativa o bloco de introdução na Home que exibe os socialIcons
+  homeInfoParams:
+    Title: ""
+    Content: "Bienvenue sur le journal de bord technique du projet. Retrouvez ci-dessous l'historique des notes et des décisions d'architecture."
+
+  # Redes Sociais (Sintaxe correta com duplo colchete)
+  socialIcons:
+    - name: "github"
+      title: "View Source on Github"
+      url: "https://github.com/jeison-souza/inf1410-projet"
+
+menus:
+  main:
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts/"
+      weight: 1
+
+    - identifier: "todo"
+      name: "ToDo"
+      url: "/todo/"
+      weight: 99
+
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 3
+
+    - identifier: "categories"
+      name: "Catégories"
+      url: "/categories/"
+      weight: 4
+
+    - identifier: "search"
+      name: "Recherche"
+      url: "/search/"
+      weight: 5
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
